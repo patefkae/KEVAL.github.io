@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url("data:image/jpeg;base64,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");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        .countdown-container {
+            position:relative;
+             /* Adjust the distance from the bottom */
+            right: -21%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: rgba(230, 13, 187, 0.941);
+            background-color: rgba(250, 172, 219, 0.9);
+            padding:0%;
+            border-radius: 10px;
+            box-shadow: 10px 0 10px rgba(0, 0, 0, 0.3);
+            margin-left: 200px;
+            margin-top: -218px;
+            min-width: 350px;
+            max-height: 480px;
+        }
+
+        .countdown-container img {
+            width: 100%; /* Make the image fill the width of the container */
+            height: 100%; /* Maintain the aspect ratio */
+            border-radius: 5px; /* Optional: Add border-radius to the image */
+            
+        }
+
+        #countdown {
+            font-size: 2em;
+            margin-top: 20px;
+            color: rgba(61, 6, 243, 0.97);
+        }
+    </style>
+</head>
+<body>
+
+<div class="countdown-container">
+    <img src="https://github.com/patefkae/PARTH.github.io/blob/main/img.jpg?raw=true" alt="Your Image Description">
+    <h2>Wishing you a future filled with love, laughter, and a lifetime of beautiful moments as you journey into wedded bliss.</h2>
+    <h1><font color="brown">PARTH BHAI & DHARA BHABHI</font></h1>
+    <h5><font color="black">FROM KEVAL</font></h5>
+   
+    <div id="countdown"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Set the date we're counting down to
+        const countDownDate = new Date("feb 17, 2024 11:30:00").getTime();
+
+        // Update the countdown every 1 second
+        const x = setInterval(function () {
+            // Get the current date and time
+            const now = new Date().getTime();
+
+            // Calculate the remaining time
+            const distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d :" + hours + "h :" + minutes + "m :" + seconds + "s ";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "CONGRATULATIONS";
+            }
+        }, 1000);
+    });
+</script>
+
+</body>
+</html>
